@@ -1,9 +1,13 @@
++51
+-4
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
+    <title>Learn HTML & CSS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,17 +20,66 @@
             color: white;
             padding: 10px 0;
         }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
         section {
             margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My GitHub Pages Site</h1>
+        <h1>Learn HTML &amp; CSS</h1>
     </header>
     <section>
         <p>This is a simple static website hosted on GitHub Pages.</p>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#html">HTML Basics</a>
+        <a href="#css">CSS Basics</a>
+    </nav>
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>This site provides a quick overview of basic HTML and CSS concepts.</p>
+    </section>
+    <section id="html">
+        <h2>HTML Basics</h2>
+        <p>HTML describes the structure of a web page using elements.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My First Heading&lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+    <section id="css">
+        <h2>CSS Basics</h2>
+        <p>CSS is used to style HTML elements.</p>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}</code></pre>
     </section>
 </body>
 </html>
